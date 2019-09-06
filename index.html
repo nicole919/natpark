@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>National Parks Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>National Park Finder</h1>
+
+<form id="js-form">
+    <label for="search-state-label">Search one or more states (seperate with commas)</label>
+    <input type="text" name="search-state" id="js-search-states" placeholder="AZ, CO" required>
+    <label for="max-results">Maximum number of results:</label>
+    <input type="number" name="max-results" id="js-result-amt" value ="10">
+    <input type="submit" value="Let's go!">
+</form> 
+
+<p id="js-error"></p>
+
+<section id="results" class="hidden">
+    <h2>Results:</h2>
+    <ul id="results-list">
+    </ul>
+</section>
+</div>
+
+    <script src ="scripts.js"></script>
+</body>
+</html>
